@@ -1,4 +1,5 @@
 // Calculate a factorial of a number
+/*
 #include <stdio.h>
 
 int fact()
@@ -37,3 +38,4 @@ int main() {
     
     return 0;
 }
+*/
