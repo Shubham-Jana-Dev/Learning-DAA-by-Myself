@@ -12,6 +12,7 @@ printf("%d + %d = %d",num1,num2,num1+num2);
 }
 */
 // Think about a algorithm which produce more than 1 output and write the program.
+/*
 #include <stdio.h>
 int main(){
 int num;
@@ -19,6 +20,17 @@ printf("Enter the number: ");
 scanf("%d",&num);
 printf("\nThe square of %d is %d",num,num*num);
 printf("\nThe You cube of %d is %d",num, num*num*num);
+    return 0;
+}
+*/
+// Understanding the Importance finitness in an algorithm
+#include <stdio.h>
+int main(){
+int count =0;
+for (int i = 0; i <= count; count++)
+{
+    printf("Hello world ");
+}
     return 0;
 }
 // Calculate a factorial of a number
