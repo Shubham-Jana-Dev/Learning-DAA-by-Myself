@@ -24,6 +24,7 @@ printf("\nThe You cube of %d is %d",num, num*num*num);
 }
 */
 // Understanding the Importance finitness in an algorithm
+/*
 #include <stdio.h>
 int main(){
 int count =0;
@@ -31,6 +32,32 @@ for (int i = 0; i <= count; count++)
 {
     printf("Hello world ");
 }
+    return 0;
+}
+*/
+// Find out the sum of n natural numbers n is taken from the user.
+/*
+#include <stdio.h>
+int main(){
+int n;
+int sum = 0;
+printf("\nPlease a non '0' number: ");
+scanf("%d",&n);
+for(int i = 0; i < n+1; i++){
+    sum += i;
+}
+printf("The total sum of %d natural is %d",n,sum);
+    return 0;
+}
+*/
+// Use the formula of the calculate the sum of n natural number for Reducing time complexity O(n) to O(1).
+#include <stdio.h>
+int main(){
+int n;
+printf("Enter the number: ");
+scanf("%d",&n);
+int sum = (n*(n+1)/2);
+printf("The sum of the %d natural number is %d",n,sum);
     return 0;
 }
 // Calculate a factorial of a number
