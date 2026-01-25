@@ -20,7 +20,7 @@ printf("%d",rev/10);
 #include <stdio.h>
 int main(){
 int num ;
-int rev;
+int rev = 0;
 printf("Enter the number: ");
 scanf("%d",&num);
 int temp = num;
@@ -30,5 +30,6 @@ while (temp>0)
    rev = rev*10 + rem;
    temp /= 10;
 }
-printf("%d", temp);
+printf("%d", rev);
+return 0;
 }
