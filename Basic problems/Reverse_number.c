@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 int main(){
 int num;
@@ -14,4 +15,20 @@ while (temp!=0)
 printf("%d",rev/10);
 
     return 0;
+}
+*/
+#include <stdio.h>
+int main(){
+int num ;
+int rev;
+printf("Enter the number: ");
+scanf("%d",&num);
+int temp = num;
+while (temp>0)
+{
+   int rem = temp% 10;
+   rev = rev*10 + rem;
+   temp /= 10;
+}
+printf("%d", temp);
 }
