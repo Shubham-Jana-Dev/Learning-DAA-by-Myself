@@ -24,3 +24,6 @@ rad.json
 TestResults.xml
 tt.py
 tt.c
+*.txt
+*.exe
+*.out
