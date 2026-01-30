@@ -20,8 +20,7 @@ while (i < length)
         gov_school = lmg+1;
     }
     else if (lmg_badge<arr[lmg]){
-        gate_of_lmg_elgin = lmg-1;
-        
+        gate_of_lmg_elgin = lmg-1; 
     }
 i++;
 }
