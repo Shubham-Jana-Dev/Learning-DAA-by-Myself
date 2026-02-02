@@ -19,25 +19,38 @@
 //     return 0;
 // }
 #include <stdio.h>
-int main(){
-int arr[] = {2,12,22,32,34,35,37,47,56,78,89,90,100};
-int length = sizeof(arr)/sizeof(arr[0]);
-int low = 0;
-int high = length -1;
-int target = 78;
-while (low <= high)
-{
-int mid = low+(high-low)/2;
-    if(target ==  arr[mid]){
-        printf("\n%d is found at index %d\n",target,mid);
-        break;
-    }
-    else if (target < arr[mid]){
-        high = mid-1;
+int Binary_Search(int arr[],int length,int target){
+    int low = 0;
+    int high = length -1;
+    if (low>high){
+        return -1;
     }
     else{
-        low = mid + 1;
+        while (low<=high){
+            int mid = low + (high - low)/2;
+            if (target == *(arr + mid)){
+                return mid;
+            }
+            else if (*(arr + mid)>target){
+                high = mid - 1;
+            }
+            else{
+                low = mid + 1;
+            }
+        }  
     }
 }
+int main(){
+    int arr[] = {12,13,14,15,23,24,26,33,35,45,56,67,78,79,90};
+    int length = sizeof(arr)/sizeof(arr[0]);
+    int key = 45;
+    int result = Binary_Search(arr,length,key);
+    if(result == -1){
+        printf("\n%d is not found in the array. :(",key);
+    }
+    else{
+        printf("\n%d is found at the indx %d",key,result);
+    }
     return 0;
 }
+
