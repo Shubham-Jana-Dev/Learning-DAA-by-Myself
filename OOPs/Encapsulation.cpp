@@ -19,7 +19,9 @@ public:
         return Company;
     }
     void setAge(int age){
-        Age = age;
+        if(age >= 10){
+            Age = age;
+        }
     }
     int getAge(){
         return Age;
