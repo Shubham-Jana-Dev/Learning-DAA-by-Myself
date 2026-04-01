@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
 
-struct student{
+struct students{
     string name;
     int roll;
     float gpa;
     bool attendance = true;
 };
 int main(){
-student Student[3] = { 
+students Student[3] = { 
 {"Shubham",34,7.5},
 {"Neha",32,7.8},
 {"Rajat",17,5.2,false}
@@ -20,7 +20,7 @@ for (int i = 0; i<3; i++){
         cout << "Great " << Student[i].name << ", You have a 75% + attendance keep it up." << endl;
     }
     else{
-        cout << Student[i].name <<", You should work on your attendace." << endl;
+        cout << Student[i].name <<", You should work on your attendance." << endl;
     }
 }
     return 0;
