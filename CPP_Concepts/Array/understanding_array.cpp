@@ -1,6 +1,6 @@
 /*
 Array = a data structure that can hold multiple values,
-values areaccessed by an index number 
+values areaccessed by an index number mmmmm
 "kind of like a variable that holds multiple values"
 */
 #include <iostream>
